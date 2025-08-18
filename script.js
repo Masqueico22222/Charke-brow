@@ -20,12 +20,27 @@ const imageNames = [
 ]
 
 const realImageUrls = {
-  autista: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/autista-9DJqc9CmjJgILBBr1J4cytLB4fXEpw.jpeg",
-  adriel: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/adriel-qXAMTwnQApjtBD4aGnnhT4PTXy6ZN9.jpeg",
-  queiroz: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/queiroz-wSAbOjiL1R7VWDTUVxv5tmk1QbTAOt.jpeg",
-  borzuk: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/borzuk-fAEt8KSQ33xsKPqsOH3H8lhMvc1lBh.jpeg",
-  cleiton: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cleiton-6FV8Ql6nN8Jni80OiPHf40l9IE6eU3.jpeg",
-  lomoska: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lomoska-ogEmn6YTgz4c1gpAUzWZof98nXYAaP.jpeg",
+  lomoska: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lomoska-QuFD1lwZqn0uM3X9i9nt8nroLAc6bM.jpeg",
+  borzuk: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/borzuk-ECbE9cd3Mn8lXBnSUdtWy3SZzZOHYt.jpeg",
+  queiroz: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/queiroz-R2jLjT8EZc5jZYbTquMiszXPosy9sx.jpeg",
+  adriel: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/adriel-VUuxO6lfikNrU3bQU7gaRFdmapnjfp.jpeg",
+  cleiton: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cleiton-nQMxAjjiBf5MXiccb1TTswc3DQZVdn.jpeg",
+  autista: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/autista-0OH1v0DmmRWOgLLF3a40f8ATJyEQf2.jpeg",
+  nigga: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nigga-U6CsX4rtyEeiOW3LKV4SX75rrq3YQJ.jpeg",
+  ronaldo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ronaldo-Gse9nNpoh7yxh9XCumc6JeAlW4mbQA.jpeg",
+  gabriel: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gabriel-HqiOJtPZ836J5UmESxMu1hfmplHZev.jpeg",
+  renan: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/renan-4WVX8YTLs8OblRKONNYihZzdkuE9HG.jpeg",
+  samantha: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/samantha-1kcTbyfanrBlC2MpgBIFBcuHqJkzO2.jpeg",
+  sabrina: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sabrina-FVZ2KM1St0BuCkJIlEMEAP6OnygGax.jpeg",
+  "lucas volt":
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lucas%20volt-EexzJD6AkdS9cmDzqRFhBE27wWF83z.jpeg",
+  "matheus lopes":
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/matheus%20lopes-OnCIwNH65vpmUBUjNQB3SNOVlt8s1n.jpeg",
+  chapolinJJ: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chapolinJJ-sUQyBg3fk0WLjPEAtBiSPle3vWixcK.jpeg",
+  "matheus henrrique":
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/matheus%20henrrique-TydXQGvzVLPuLzucLHWOFTYzSDwbxj.jpeg",
+  gustavolyra:
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gustavolyra-gbq4D3BxsL2vbKQRVHGfSf8K3VjmiM.jpeg",
 }
 
 // Variáveis globais
@@ -47,9 +62,9 @@ function createGalleryItem(name, index) {
   galleryItem.className = "gallery-item"
   galleryItem.setAttribute("data-index", index)
 
-  // Usar URL real se disponível, senão usar placeholder
   const imageUrl =
-    realImageUrls[name] || `/placeholder.svg?height=200&width=300&query=${encodeURIComponent(name + " photo")}`
+    realImageUrls[name] ||
+    `https://via.placeholder.com/300x200/6366f1/ffffff?text=${encodeURIComponent(name.replace(" ", "+"))}`
 
   galleryItem.innerHTML = `
         <img src="${imageUrl}" alt="${name}" loading="lazy">
@@ -72,10 +87,11 @@ function loadGallery() {
     const galleryItem = createGalleryItem(name, index)
     gallery.appendChild(galleryItem)
 
-    // Armazenar informações da imagem com URL real quando disponível
     galleryImages.push({
       name: name,
-      url: realImageUrls[name] || `/placeholder.svg?height=600&width=800&query=${encodeURIComponent(name + " photo")}`,
+      url:
+        realImageUrls[name] ||
+        `https://via.placeholder.com/600x400/6366f1/ffffff?text=${encodeURIComponent(name.replace(" ", "+"))}`,
     })
   })
 }
