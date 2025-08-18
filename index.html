@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Gerador de Grupos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Gerador de Grupos - 19 Alunos</h1>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <p>Clique nas imagens para visualizar em tamanho maior</p>
+    </header>
 
-  <!-- Botão para gerar os grupos -->
-  <button onclick="gerarGrupos()">Gerar Grupos</button>
+    <main class="gallery-container">
+        <div class="gallery-grid" id="gallery">
+            <!-- As imagens serão carregadas dinamicamente pelo JavaScript -->
+        </div>
+    </main>
 
-  <!-- Área onde os grupos serão exibidos -->
-  <div id="resultado"></div>
+    <!-- Modal/Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <button class="nav-btn prev-btn" id="prevBtn">&#8249;</button>
+            <img class="lightbox-img" id="lightboxImg" src="/placeholder.svg" alt="">
+            <button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+            <div class="image-info">
+                <h3 id="imageName"></h3>
+                <p id="imageCounter"></p>
+            </div>
+        </div>
+    </div>
 
-  <!-- Script JS externo -->
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Galeria de Fotos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
