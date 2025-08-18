@@ -17,6 +17,7 @@ const imageNames = [
   "chapolinJJ",
   "matheus henrrique",
   "gustavolyra",
+  "carlos",
 ]
 
 const realImageUrls = {
@@ -41,6 +42,8 @@ const realImageUrls = {
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/matheus%20henrrique-TydXQGvzVLPuLzucLHWOFTYzSDwbxj.jpeg",
   gustavolyra:
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gustavolyra-gbq4D3BxsL2vbKQRVHGfSf8K3VjmiM.jpeg",
+  carlos:
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-18%20at%2011.08.12-ledGkqaxySjjblCJGa8pyzk1PGIfzX.jpeg",
 }
 
 // Variáveis globais
