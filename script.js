@@ -18,6 +18,11 @@ const imageNames = [
   "matheus henrrique",
   "gustavolyra",
   "carlos",
+  "maria gabriela",
+  "joao martins",
+  "janaine",
+  "guilherme",
+  "pessoa",
 ]
 
 const realImageUrls = {
@@ -44,6 +49,11 @@ const realImageUrls = {
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gustavolyra-gbq4D3BxsL2vbKQRVHGfSf8K3VjmiM.jpeg",
   carlos:
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-18%20at%2011.08.12-ledGkqaxySjjblCJGa8pyzk1PGIfzX.jpeg",
+  "maria gabriela": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gJwwB7Y7YqTjUipHdeC34rUq5btjwT.png",
+  "joao martins": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JY055jm0Fdnuq9cylygZqITPYhG7tF.png",
+  janaine: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tKHWdgv7HH08GXloSufJxyY3ik4wX4.png",
+  guilherme: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-F2GcyvamYlUW6ZwTUmiv4yyR5w8KCP.png",
+  pessoa: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9vee3SZ4yiP1WSdROriIR24UGX4C2C.png",
 }
 
 // Variáveis globais
