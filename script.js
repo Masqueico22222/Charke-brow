@@ -19,6 +19,15 @@ const imageNames = [
   "gustavolyra",
 ]
 
+const realImageUrls = {
+  autista: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/autista-9DJqc9CmjJgILBBr1J4cytLB4fXEpw.jpeg",
+  adriel: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/adriel-qXAMTwnQApjtBD4aGnnhT4PTXy6ZN9.jpeg",
+  queiroz: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/queiroz-wSAbOjiL1R7VWDTUVxv5tmk1QbTAOt.jpeg",
+  borzuk: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/borzuk-fAEt8KSQ33xsKPqsOH3H8lhMvc1lBh.jpeg",
+  cleiton: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cleiton-6FV8Ql6nN8Jni80OiPHf40l9IE6eU3.jpeg",
+  lomoska: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lomoska-ogEmn6YTgz4c1gpAUzWZof98nXYAaP.jpeg",
+}
+
 // Variáveis globais
 let currentImageIndex = 0
 const galleryImages = []
@@ -33,14 +42,14 @@ const closeBtn = document.getElementById("closeBtn")
 const prevBtn = document.getElementById("prevBtn")
 const nextBtn = document.getElementById("nextBtn")
 
-// Função para criar item da galeria
 function createGalleryItem(name, index) {
   const galleryItem = document.createElement("div")
   galleryItem.className = "gallery-item"
   galleryItem.setAttribute("data-index", index)
 
-  // Usando placeholder.svg para as imagens
-  const imageUrl = `/placeholder.svg?height=200&width=300&query=${encodeURIComponent(name + " photo")}`
+  // Usar URL real se disponível, senão usar placeholder
+  const imageUrl =
+    realImageUrls[name] || `/placeholder.svg?height=200&width=300&query=${encodeURIComponent(name + " photo")}`
 
   galleryItem.innerHTML = `
         <img src="${imageUrl}" alt="${name}" loading="lazy">
@@ -56,7 +65,6 @@ function createGalleryItem(name, index) {
   return galleryItem
 }
 
-// Função para carregar a galeria
 function loadGallery() {
   gallery.innerHTML = ""
 
@@ -64,10 +72,10 @@ function loadGallery() {
     const galleryItem = createGalleryItem(name, index)
     gallery.appendChild(galleryItem)
 
-    // Armazenar informações da imagem
+    // Armazenar informações da imagem com URL real quando disponível
     galleryImages.push({
       name: name,
-      url: `/placeholder.svg?height=600&width=800&query=${encodeURIComponent(name + " photo")}`,
+      url: realImageUrls[name] || `/placeholder.svg?height=600&width=800&query=${encodeURIComponent(name + " photo")}`,
     })
   })
 }
