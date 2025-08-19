@@ -70,7 +70,7 @@ header p {
   transform: scale(1.1);
 }
 
-.gallery-item .overlay {
+.image-name {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -78,18 +78,15 @@ header p {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   color: white;
   padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
   transform: translateY(100%);
   transition: transform 0.3s ease;
 }
 
-.gallery-item:hover .overlay {
+.gallery-item:hover .image-name {
   transform: translateY(0);
-}
-
-.overlay h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
 }
 
 /* Lightbox Styles */
@@ -270,113 +267,4 @@ footer {
   .lightbox-content {
     max-width: 95%;
   }
-}
-
-/* Adicionando estilos específicos para os nomes das pessoas */
-.gallery-item[data-name="leonardo prado trindade"] .overlay h3::after {
-  content: " - Leonardo Prado Trindade";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="adriel vinicius da luz tomaz"] .overlay h3::after {
-  content: " - Adriel Vinicius da Luz Tomaz";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="carlos emanuel da silva"] .overlay h3::after {
-  content: " - Carlos Emanuel da Silva";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="cleiton douglas araujo de souza"] .overlay h3::after {
-  content: " - Cleiton Douglas Araujo de Souza";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="vitor queiroz de brito nascimento"] .overlay h3::after {
-  content: " - Vitor Queiroz de Brito Nascimento";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="maria eduarda borzuk"] .overlay h3::after {
-  content: " - Maria Eduarda Borzuk";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="victor gabriel de sousa"] .overlay h3::after {
-  content: " - Victor Gabriel de Sousa";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="joao gabriel jose"] .overlay h3::after {
-  content: " - João Gabriel José";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="breno ferreira de brito"] .overlay h3::after {
-  content: " - Breno Ferreira de Brito";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="gabriel merico hort"] .overlay h3::after {
-  content: " - Gabriel Merico Hort";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="renan stefani lira"] .overlay h3::after {
-  content: " - Renan Stefani Lira";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="samantha christaski garcia colucci"] .overlay h3::after {
-  content: " - Samantha Christaski Garcia Colucci";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="sabrina de oliveira alves"] .overlay h3::after {
-  content: " - Sabrina de Oliveira Alves";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="lucas calciolari consolaro dos santos"] .overlay h3::after {
-  content: " - Lucas Calciolari Consolaro dos Santos";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="matheus henrrique dos santos lopes"] .overlay h3::after {
-  content: " - Matheus Henrrique dos Santos Lopes";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="jackson josé adão felix"] .overlay h3::after {
-  content: " - Jackson José Adão Felix";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="matheus henrrique de carvalho"] .overlay h3::after {
-  content: " - Matheus Henrrique de Carvalho";
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.gallery-item[data-name="gustavo martins lyra"] .overlay h3::after {
-  content: " - Gustavo Martins Lyra";
-  font-size: 0.9rem;
-  font-weight: normal;
 }
