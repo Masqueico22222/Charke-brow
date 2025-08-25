@@ -1,126 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Estudantes - Colégio E. Barbosa Ferraz</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Configurações básicas do documento HTML -->
+    <meta charset="UTF-8"> <!-- Define codificação de caracteres para português -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Galeria de Estudantes - Colégio E. Barbosa Ferraz</title> <!-- Título que aparece na aba do navegador -->
+    
+    <!-- Importação dos arquivos de estilo -->
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS principal com todos os estilos da galeria -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> <!-- Fontes modernas do Google Fonts -->
 </head>
 <body>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <!-- Header principal com título e informações do colégio -->
     <header class="modern-header">
         <div class="header-content">
-            <h1 class="main-title">Galeria de Estudantes</h1>
-            <p class="subtitle">Colégio E. Barbosa Ferraz - Ivaiporá</p>
-            <div class="header-decoration"></div>
+            <h1 class="main-title">Galeria de Estudantes</h1> <!-- Título principal da galeria -->
+            <p class="subtitle">Colégio E. Barbosa Ferraz - Ivaiporá</p> <!-- Nome da instituição -->
+            <div class="header-decoration"></div> <!-- Elemento decorativo visual -->
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL DA GALERIA -->
+    <!-- Container principal que contém todas as fotos dos estudantes -->
     <main class="gallery-container">
+        <!-- Grid responsivo que organiza as fotos em colunas -->
         <div class="gallery-grid" id="gallery">
-            <!-- Atualizando todas as URLs para as versões funcionais corretas -->
-            <div class="gallery-item" data-index="0">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lomoska-QuFD1lwZqn0uM3X9i9nt8nroLAc6bM.jpeg" alt="victor gabriel de sousa" loading="lazy">
-                <div class="image-overlay">
-                    <div class="image-name">Victor Gabriel de Sousa</div>
+            
+            <!-- FOTO 1: Victor Gabriel de Sousa -->
+            <!-- Cada div.gallery-item representa uma foto individual na galeria -->
+            <div class="gallery-item" data-index="0"> <!-- data-index usado pelo JavaScript para navegação -->
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lomoska-QuFD1lwZqn0uM3X9i9nt8nroLAc6bM.jpeg" alt="victor gabriel de sousa" loading="lazy"> <!-- loading="lazy" melhora performance -->
+                <div class="image-overlay"> <!-- Overlay que aparece ao passar mouse sobre a foto -->
+                    <div class="image-name">Victor Gabriel de Sousa</div> <!-- Nome completo do estudante -->
                 </div>
             </div>
+            
+            <!-- FOTO 2: Maria Eduarda Borzuk -->
             <div class="gallery-item" data-index="1">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/borzuk-ECbE9cd3Mn8lXBnSUdtWy3SZzZOHYt.jpeg" alt="maria eduarda borzuk" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Maria Eduarda Borzuk</div>
                 </div>
             </div>
+            
+            <!-- FOTO 3: Vitor Queiroz de Brito Nascimento -->
             <div class="gallery-item" data-index="2">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/queiroz-R2jLjT8EZc5jZYbTquMiszXPosy9sx.jpeg" alt="vitor queiroz de brito nascimento" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Vitor Queiroz de Brito Nascimento</div>
                 </div>
             </div>
+            
+            <!-- FOTO 4: Adriel Vinicius da Luz Tomaz -->
             <div class="gallery-item" data-index="3">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/adriel-VUuxO6lfikNrU3bQU7gaRFdmapnjfp.jpeg" alt="adriel vinicius da luz tomaz" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Adriel Vinicius da Luz Tomaz</div>
                 </div>
             </div>
+            
+            <!-- FOTO 5: Cleiton Douglas Araujo de Souza -->
             <div class="gallery-item" data-index="4">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cleiton-nQMxAjjiBf5MXiccb1TTswc3DQZVdn.jpeg" alt="cleiton douglas araujo de souza" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Cleiton Douglas Araujo de Souza</div>
                 </div>
             </div>
+            
+            <!-- FOTO 6: Leonardo Prado Trindade -->
             <div class="gallery-item" data-index="5">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/autista-0OH1v0DmmRWOgLLF3a40f8ATJyEQf2.jpeg" alt="leonardo prado trindade" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Leonardo Prado Trindade</div>
                 </div>
             </div>
+            
+            <!-- FOTO 7: João Gabriel José -->
             <div class="gallery-item" data-index="6">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nigga-U6CsX4rtyEeiOW3LKV4SX75rrq3YQJ.jpeg" alt="joao gabriel jose" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">João Gabriel José</div>
                 </div>
             </div>
+            
+            <!-- FOTO 8: Breno Ferreira de Brito -->
             <div class="gallery-item" data-index="7">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ronaldo-Gse9nNpoh7yxh9XCumc6JeAlW4mbQA.jpeg" alt="breno ferreira de brito" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Breno Ferreira de Brito</div>
                 </div>
             </div>
+            
+            <!-- FOTO 9: Gabriel Merico Hort -->
             <div class="gallery-item" data-index="8">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gabriel-HqiOJtPZ836J5UmESxMu1hfmplHZev.jpeg" alt="gabriel merico hort" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Gabriel Merico Hort</div>
                 </div>
             </div>
+            
+            <!-- FOTO 10: Renan Stefani Lira -->
             <div class="gallery-item" data-index="9">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/renan-4WVX8YTLs8OblRKONNYihZzdkuE9HG.jpeg" alt="renan stefani lira" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Renan Stefani Lira</div>
                 </div>
             </div>
+            
+            <!-- FOTO 11: Samantha Christaski Garcia Colucci -->
             <div class="gallery-item" data-index="10">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/samantha-1kcTbyfanrBlC2MpgBIFBcuHqJkzO2.jpeg" alt="samantha christaski garcia colucci" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Samantha Christaski Garcia Colucci</div>
                 </div>
             </div>
+            
+            <!-- FOTO 12: Sabrina de Oliveira Alves -->
             <div class="gallery-item" data-index="11">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sabrina-FVZ2KM1St0BuCkJIlEMEAP6OnygGax.jpeg" alt="sabrina de oliveira alves" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Sabrina de Oliveira Alves</div>
                 </div>
             </div>
+            
+            <!-- FOTO 13: Lucas Calciolari Consolaro dos Santos -->
             <div class="gallery-item" data-index="12">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lucas%20volt-EexzJD6AkdS9cmDzqRFhBE27wWF83z.jpeg" alt="lucas calciolari consolaro dos santos" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Lucas Calciolari Consolaro dos Santos</div>
                 </div>
             </div>
+            
+            <!-- FOTO 14: Matheus Henrrique dos Santos Lopes -->
             <div class="gallery-item" data-index="13">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/matheus%20lopes-OnCIwNH65vpmUBUjNQB3SNOVlt8s1n.jpeg" alt="matheus henrrique dos santos lopes" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Matheus Henrrique dos Santos Lopes</div>
                 </div>
             </div>
+            
+            <!-- FOTO 15: Jackson José Adão Felix -->
             <div class="gallery-item" data-index="14">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chapolinJJ-sUQyBg3fk0WLjPEAtBiSPle3vWixcK.jpeg" alt="jackson josé adão felix" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Jackson José Adão Felix</div>
                 </div>
             </div>
+            
+            <!-- FOTO 16: Matheus Henrrique de Carvalho -->
             <div class="gallery-item" data-index="15">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/matheus%20henrrique-TydXQGvzVLPuLzucLHWOFTYzSDwbxj.jpeg" alt="matheus henrrique de carvalho" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Matheus Henrrique de Carvalho</div>
                 </div>
             </div>
+            
+            <!-- FOTO 17: Gustavo Martins Lyra -->
             <div class="gallery-item" data-index="16">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gustavolyra-gbq4D3BxsL2vbKQRVHGfSf8K3VjmiM.jpeg" alt="gustavo martins lyra" loading="lazy">
                 <div class="image-overlay">
                     <div class="image-name">Gustavo Martins Lyra</div>
                 </div>
             </div>
+            
+            <!-- FOTO 18: Carlos Emanuel da Silva -->
             <div class="gallery-item" data-index="17">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carlos-gYvQvIm31RG11B1Z12nTOE89uETrQV.jpeg" alt="carlos emanuel da silva" loading="lazy">
                 <div class="image-overlay">
@@ -130,43 +174,58 @@
         </div>
     </main>
 
-    <!-- Modal/Lightbox modernizado -->
+    <!-- MODAL/LIGHTBOX PARA VISUALIZAÇÃO AMPLIADA -->
+    <!-- Lightbox que abre quando clica em uma foto, permitindo visualização em tela cheia -->
     <div class="lightbox" id="lightbox">
-        <div class="lightbox-backdrop"></div>
-        <div class="lightbox-content">
+        <div class="lightbox-backdrop"></div> <!-- Fundo escuro semi-transparente -->
+        <div class="lightbox-content"> <!-- Container principal do lightbox -->
+            
+            <!-- Botão para fechar o lightbox -->
             <button class="close-btn" id="closeBtn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="18" y1="6" x2="6" y2="18"></line> <!-- Ícone X para fechar -->
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
+            
+            <!-- Botão para navegar para foto anterior -->
             <button class="nav-btn prev-btn" id="prevBtn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="15,18 9,12 15,6"></polyline>
+                    <polyline points="15,18 9,12 15,6"></polyline> <!-- Seta para esquerda -->
                 </svg>
             </button>
+            
+            <!-- Container da imagem ampliada -->
             <div class="lightbox-image-container">
-                <img class="lightbox-img" id="lightboxImg" src="/placeholder.svg" alt="">
+                <img class="lightbox-img" id="lightboxImg" src="/placeholder.svg" alt=""> <!-- Imagem que será exibida em tamanho grande -->
             </div>
+            
+            <!-- Botão para navegar para próxima foto -->
             <button class="nav-btn next-btn" id="nextBtn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9,18 15,12 9,6"></polyline>
+                    <polyline points="9,18 15,12 9,6"></polyline> <!-- Seta para direita -->
                 </svg>
             </button>
+            
+            <!-- Informações da imagem (nome e contador) -->
             <div class="image-info">
-                <h3 id="imageName"></h3>
-                <p id="imageCounter"></p>
+                <h3 id="imageName"></h3> <!-- Nome do estudante -->
+                <p id="imageCounter"></p> <!-- Contador tipo "1 de 18" -->
             </div>
         </div>
     </div>
 
+    <!-- RODAPÉ DA PÁGINA -->
+    <!-- Footer com informações de copyright -->
     <footer class="modern-footer">
         <div class="footer-content">
-            <p>&copy; 2024 Colégio E. Barbosa Ferraz - Ivaiporá. Todos os direitos reservados.</p>
-            <div class="footer-decoration"></div>
+            <p>&copy; 2024 Colégio E. Barbosa Ferraz - Ivaiporá. Todos os direitos reservados.</p> <!-- Copyright -->
+            <div class="footer-decoration"></div> <!-- Elemento decorativo -->
         </div>
     </footer>
 
+    <!-- IMPORTAÇÃO DO JAVASCRIPT -->
+    <!-- Script que adiciona toda a funcionalidade interativa da galeria -->
     <script src="script.js"></script>
 </body>
 </html>
